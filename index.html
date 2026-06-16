@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ترجم | خدمات الترجمة والتدريب اللغوي</title>
+  <meta name="description" content="ترجم - خدمات ترجمة احترافية وكورسات لغات في القاهرة. عربي، ألماني، إنجليزي." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="lang-ar" data-lang="ar">
+
+  <!-- Language Switcher -->
+  <div class="lang-bar">
+    <div class="container">
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('ar')">العربية</button>
+        <button class="lang-btn" onclick="setLang('de')">Deutsch</button>
+        <button class="lang-btn" onclick="setLang('en')">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <span class="logo-ar">ترجم</span>
+          <span class="logo-de" style="display:none">Targem</span>
+          <span class="logo-en" style="display:none">Targem</span>
+          <span class="logo-tagline">
+            <span class="t-ar">للترجمة والتدريب</span>
+            <span class="t-de" style="display:none">Übersetzung & Ausbildung</span>
+            <span class="t-en" style="display:none">Translation & Training</span>
+          </span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#services">
+            <span class="t-ar">الخدمات</span>
+            <span class="t-de" style="display:none">Leistungen</span>
+            <span class="t-en" style="display:none">Services</span>
+          </a></li>
+          <li><a href="#courses">
+            <span class="t-ar">الكورسات</span>
+            <span class="t-de" style="display:none">Kurse</span>
+            <span class="t-en" style="display:none">Courses</span>
+          </a></li>
+          <li><a href="#languages">
+            <span class="t-ar">اللغات</span>
+            <span class="t-de" style="display:none">Sprachen</span>
+            <span class="t-en" style="display:none">Languages</span>
+          </a></li>
+          <li><a href="#about">
+            <span class="t-ar">عن الشركة</span>
+            <span class="t-de" style="display:none">Über uns</span>
+            <span class="t-en" style="display:none">About Us</span>
+          </a></li>
+          <li><a href="#contact" class="btn-nav">
+            <span class="t-ar">تواصل معنا</span>
+            <span class="t-de" style="display:none">Kontakt</span>
+            <span class="t-en" style="display:none">Contact</span>
+          </a></li>
+        </ul>
+        <button class="mobile-toggle" onclick="toggleMenu()">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="t-ar">📍 القاهرة، مصر</span>
+          <span class="t-de" style="display:none">📍 Kairo, Ägypten</span>
+          <span class="t-en" style="display:none">📍 Cairo, Egypt</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="t-ar">كلمات تعبر الحدود<br/><span class="accent">ترجم</span> معك في كل خطوة</span>
+          <span class="t-de" style="display:none">Worte, die Grenzen überwinden<br/><span class="accent">Targem</span> – Ihr Sprachpartner</span>
+          <span class="t-en" style="display:none">Words That Cross Borders<br/><span class="accent">Targem</span> by Your Side</span>
+        </h1>
+        <p class="hero-desc">
+          <span class="t-ar">خدمات ترجمة احترافية وكورسات لغات معتمدة في القاهرة. نربط الثقافات ونفتح أبواب الفرص بالعربية والألمانية والإنجليزية.</span>
+          <span class="t-de" style="display:none">Professionelle Übersetzungen und zertifizierte Sprachkurse in Kairo. Wir verbinden Kulturen und eröffnen neue Möglichkeiten auf Arabisch, Deutsch und Englisch.</span>
+          <span class="t-en" style="display:none">Professional translation services and certified language courses in Cairo. We connect cultures and open doors in Arabic, German, and English.</span>
+        </p>
+        <div class="hero-btns">
+          <a href="#services" class="btn btn-primary">
+            <span class="t-ar">اكتشف خدماتنا</span>
+            <span class="t-de" style="display:none">Unsere Leistungen</span>
+            <span class="t-en" style="display:none">Explore Services</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span class="t-ar">احصل على عرض سعر</span>
+            <span class="t-de" style="display:none">Angebot anfordern</span>
+            <span class="t-en" style="display:none">Get a Quote</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">
+              <span class="t-ar">عميل راضٍ</span>
+              <span class="t-de" style="display:none">Zufriedene Kunden</span>
+              <span class="t-en" style="display:none">Happy Clients</span>
+            </span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">
+              <span class="t-ar">سنوات خبرة</span>
+              <span class="t-de" style="display:none">Jahre Erfahrung</span>
+              <span class="t-en" style="display:none">Years Experience</span>
+            </span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">
+              <span class="t-ar">لغات رئيسية</span>
+              <span class="t-de" style="display:none">Hauptsprachen</span>
+              <span class="t-en" style="display:none">Core Languages</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="lang-orbs">
+          <div class="orb orb-ar">عربي</div>
+          <div class="orb orb-de">Deutsch</div>
+          <div class="orb orb-en">English</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="t-ar">ما نقدمه</span>
+          <span class="t-de" style="display:none">Was wir bieten</span>
+          <span class="t-en" style="display:none">What We Offer</span>
+        </span>
+        <h2 class="section-title">
+          <span class="t-ar">خدمات الترجمة الاحترافية</span>
+          <span class="t-de" style="display:none">Professionelle Übersetzungsleistungen</span>
+          <span class="t-en" style="display:none">Professional Translation Services</span>
+        </h2>
+        <p class="section-sub">
+          <span class="t-ar">نقدم ترجمات دقيقة ومعتمدة لكافة المجالات</span>
+          <span class="t-de" style="display:none">Wir bieten präzise und zertifizierte Übersetzungen für alle Bereiche</span>
+          <span class="t-en" style="display:none">Accurate and certified translations across all fields</span>
+        </p>
+      </div>
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-icon">📄</div>
+          <h3 class="card-title">
+            <span class="t-ar">ترجمة وثائق رسمية</span>
+            <span class="t-de" style="display:none">Amtliche Dokumente</span>
+            <span class="t-en" style="display:none">Official Documents</span>
+          </h3>
+          <p class="card-desc">
+            <span class="t-ar">جوازات سفر، شهادات، عقود، وثائق حكومية — بترجمة معتمدة تُقبل لدى الجهات الرسمية.</span>
+            <span class="t-de" style="display:none">Pässe, Zeugnisse, Verträge, Behördendokumente — beglaubigte Übersetzungen für offizielle Stellen.</span>
+            <span class="t-en" style="display:none">Passports, certificates, contracts, government papers — certified translations accepted by official bodies.</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⚖️</div>
+          <h3 class="card-title">
+            <span class="t-ar">ترجمة قانونية</span>
+            <span class="t-de" style="display:none">Juristische Übersetzung</span>
+            <span class="t-en" style="display:none">Legal Translation</span>
+          </h3>
+          <p class="card-desc">
+            <span class="t-ar">عقود، اتفاقيات، وثائق محاكم — بدقة قانونية عالية واحترام تام للمصطلحات التخصصية.</span>
+            <span class="t-de" style="display:none">Verträge, Vereinbarungen, Gerichtsdokumente — mit höchster juristischer Präzision.</span>
+            <span class="t-en" style="display:none">Contracts, agreements, court documents — with high legal precision and specialist terminology.</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💼</div>
+          <h3 class="card-title">
+            <span class="t-ar">ترجمة تجارية</span>
+            <span class="t-de" style="display:none">Wirtschaftsübersetzung</span>
+            <span class="t-en" style="display:none">Business Translation</span>
+          </h3>
+          <p class="card-desc">
+            <span class="t-ar">تقارير، مراسلات، خطط أعمال، عروض تقديمية — نساعد شركتك على التوسع عالمياً.</span>
+            <span class="t-de" style="display:none">Berichte, Korrespondenz, Geschäftspläne, Präsentationen — wir helfen Ihrem Unternehmen beim globalen Wachstum.</span>
+            <span class="t-en" style="display:none">Reports, correspondence, business plans, presentations — helping your company expand globally.</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏥</div>
+          <h3 class="card-title">
+            <span class="t-ar">ترجمة طبية</span>
+            <span class="t-de" style="display:none">Medizinische Übersetzung</span>
+            <span class="t-en" style="display:none">Medical Translation</span>
+          </h3>
+          <p class="card-desc">
+            <span class="t-ar">تقارير طبية، ملفات مرضى، أبحاث طبية — بدقة عالية تضمن سلامة المريض.</span>
+            <span class="t-de" style="display:none">Arztberichte, Patientenakten, medizinische Forschung — mit höchster Präzision für die Patientensicherheit.</span>
+            <span class="t-en" style="display:none">Medical reports, patient files, research papers — precision that ensures patient safety.</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3 class="card-title">
+            <span class="t-ar">ترجمة أكاديمية</span>
+            <span class="t-de" style="display:none">Akademische Übersetzung</span>
+            <span class="t-en" style="display:none">Academic Translation</span>
+          </h3>
+          <p class="card-desc">
+            <span class="t-ar">أبحاث، رسائل ماجستير ودكتوراه، شهادات جامعية — ترجمة تحفظ الأسلوب الأكاديمي.</span>
+            <span class="t-de" style="display:none">Forschungsarbeiten, Master- und Doktorarbeiten, Universitätszeugnisse — mit akademischem Sprachstil.</span>
+            <span class="t-en" style="display:none">Research papers, theses, university certificates — preserving academic style and tone.</span>
+          </p>
+        </div>
+
+        <div class="card card-featured">
+          <div class="card-icon">🌐</div>
+          <h3 class="card-title">
+            <span class="t-ar">ترجمة إبداعية</span>
+            <span class="t-de" style="display:none">Kreative Übersetzung</span>
+            <span class="t-en" style="display:none">Creative Translation</span>
+          </h3>
+          <p class="card-desc">
+            <span class="t-ar">محتوى تسويقي، مواقع ويب، إعلانات — ترجمة تحافظ على الروح الإبداعية وتلامس القارئ.</span>
+            <span class="t-de" style="display:none">Marketinginhalte, Webseiten, Werbetexte — Übersetzung mit kreativem Geist.</span>
+            <span class="t-en" style="display:none">Marketing content, websites, ads — translation that preserves the creative spirit.</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="section section-alt" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="t-ar">تعلم وتطور</span>
+          <span class="t-de" style="display:none">Lernen & Wachsen</span>
+          <span class="t-en" style="display:none">Learn & Grow</span>
+        </span>
+        <h2 class="section-title">
+          <span class="t-ar">كورسات اللغات والتدريب</span>
+          <span class="t-de" style="display:none">Sprachkurse & Training</span>
+          <span class="t-en" style="display:none">Language Courses & Training</span>
+        </h2>
+        <p class="section-sub">
+          <span class="t-ar">برامج تدريبية مرنة للأفراد والشركات — أونلاين وحضوري في القاهرة</span>
+          <span class="t-de" style="display:none">Flexible Trainingsprogramme für Einzelpersonen und Unternehmen — online und in Kairo</span>
+          <span class="t-en" style="display:none">Flexible training for individuals and companies — online and in-person in Cairo</span>
+        </p>
+      </div>
+      <div class="courses-grid">
+
+        <div class="course-card">
+          <div class="course-lang-badge badge-de">🇩🇪 Deutsch</div>
+          <h3 class="course-title">
+            <span class="t-ar">كورس اللغة الألمانية</span>
+            <span class="t-de" style="display:none">Deutschkurs</span>
+            <span class="t-en" style="display:none">German Language Course</span>
+          </h3>
+          <ul class="course-levels">
+            <li>A1 – A2 <span class="t-ar">(مبتدئ)</span><span class="t-de" style="display:none">(Anfänger)</span><span class="t-en" style="display:none">(Beginner)</span></li>
+            <li>B1 – B2 <span class="t-ar">(متوسط)</span><span class="t-de" style="display:none">(Mittelstufe)</span><span class="t-en" style="display:none">(Intermediate)</span></li>
+            <li>C1 – C2 <span class="t-ar">(متقدم)</span><span class="t-de" style="display:none">(Fortgeschritten)</span><span class="t-en" style="display:none">(Advanced)</span></li>
+          </ul>
+          <p class="course-note">
+            <span class="t-ar">مناسب للهجرة، الدراسة في ألمانيا، العمل، والثقافة</span>
+            <span class="t-de" style="display:none">Ideal für Einwanderung, Studium, Beruf und Kultur</span>
+            <span class="t-en" style="display:none">Ideal for immigration, study in Germany, work, and culture</span>
+          </p>
+          <a href="#contact" class="btn btn-course">
+            <span class="t-ar">سجّل الآن</span>
+            <span class="t-de" style="display:none">Jetzt anmelden</span>
+            <span class="t-en" style="display:none">Enroll Now</span>
+          </a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-lang-badge badge-ar">🇪🇬 عربي</div>
+          <h3 class="course-title">
+            <span class="t-ar">كورس اللغة العربية</span>
+            <span class="t-de" style="display:none">Arabischkurs</span>
+            <span class="t-en" style="display:none">Arabic Language Course</span>
+          </h3>
+          <ul class="course-levels">
+            <li>
+              <span class="t-ar">مستوى مبتدئ — قراءة وكتابة</span>
+              <span class="t-de" style="display:none">Anfänger — Lesen & Schreiben</span>
+              <span class="t-en" style="display:none">Beginner — Reading & Writing</span>
+            </li>
+            <li>
+              <span class="t-ar">مستوى متوسط — محادثة ونحو</span>
+              <span class="t-de" style="display:none">Mittelstufe — Konversation & Grammatik</span>
+              <span class="t-en" style="display:none">Intermediate — Conversation & Grammar</span>
+            </li>
+            <li>
+              <span class="t-ar">عربية الأعمال والترجمة</span>
+              <span class="t-de" style="display:none">Arabisch für Wirtschaft & Übersetzung</span>
+              <span class="t-en" style="display:none">Business Arabic & Translation</span>
+            </li>
+          </ul>
+          <p class="course-note">
+            <span class="t-ar">للناطقين بغير العربية، والمغتربين العرب</span>
+            <span class="t-de" style="display:none">Für Nicht-Muttersprachler und arabische Auslandsgemeinden</span>
+            <span class="t-en" style="display:none">For non-native speakers and Arabic diaspora</span>
+          </p>
+          <a href="#contact" class="btn btn-course">
+            <span class="t-ar">سجّل الآن</span>
+            <span class="t-de" style="display:none">Jetzt anmelden</span>
+            <span class="t-en" style="display:none">Enroll Now</span>
+          </a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-lang-badge badge-en">🇬🇧 English</div>
+          <h3 class="course-title">
+            <span class="t-ar">كورس اللغة الإنجليزية</span>
+            <span class="t-de" style="display:none">Englischkurs</span>
+            <span class="t-en" style="display:none">English Language Course</span>
+          </h3>
+          <ul class="course-levels">
+            <li>
+              <span class="t-ar">إنجليزي عام — جميع المستويات</span>
+              <span class="t-de" style="display:none">Allgemeines Englisch — alle Niveaus</span>
+              <span class="t-en" style="display:none">General English — all levels</span>
+            </li>
+            <li>
+              <span class="t-ar">إنجليزي الأعمال والمراسلات</span>
+              <span class="t-de" style="display:none">Business English & Korrespondenz</span>
+              <span class="t-en" style="display:none">Business English & Correspondence</span>
+            </li>
+            <li>IELTS / TOEFL
+              <span class="t-ar">تحضير</span>
+              <span class="t-de" style="display:none">Vorbereitung</span>
+              <span class="t-en" style="display:none">Preparation</span>
+            </li>
+          </ul>
+          <p class="course-note">
+            <span class="t-ar">حضوري وأونلاين — مرن مع جدولك</span>
+            <span class="t-de" style="display:none">Präsenz und Online — flexibel nach Ihrem Zeitplan</span>
+            <span class="t-en" style="display:none">In-person and online — flexible to your schedule</span>
+          </p>
+          <a href="#contact" class="btn btn-course">
+            <span class="t-ar">سجّل الآن</span>
+            <span class="t-de" style="display:none">Jetzt anmelden</span>
+            <span class="t-en" style="display:none">Enroll Now</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Banner -->
+  <section class="lang-showcase" id="languages">
+    <div class="container">
+      <div class="lang-showcase-inner">
+        <div class="lang-item">
+          <div class="lang-flag">🇸🇦</div>
+          <div class="lang-name">العربية</div>
+          <div class="lang-sub">
+            <span class="t-ar">لغة أم وتدريس</span>
+            <span class="t-de" style="display:none">Muttersprache & Unterricht</span>
+            <span class="t-en" style="display:none">Native & Teaching</span>
+          </div>
+        </div>
+        <div class="lang-arrow">⇄</div>
+        <div class="lang-item">
+          <div class="lang-flag">🇩🇪</div>
+          <div class="lang-name">Deutsch</div>
+          <div class="lang-sub">
+            <span class="t-ar">ترجمة وتدريس</span>
+            <span class="t-de" style="display:none">Übersetzung & Unterricht</span>
+            <span class="t-en" style="display:none">Translation & Teaching</span>
+          </div>
+        </div>
+        <div class="lang-arrow">⇄</div>
+        <div class="lang-item">
+          <div class="lang-flag">🇬🇧</div>
+          <div class="lang-name">English</div>
+          <div class="lang-sub">
+            <span class="t-ar">ترجمة وتدريس</span>
+            <span class="t-de" style="display:none">Übersetzung & Unterricht</span>
+            <span class="t-en" style="display:none">Translation & Teaching</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">
+            <span class="t-ar">من نحن</span>
+            <span class="t-de" style="display:none">Über uns</span>
+            <span class="t-en" style="display:none">About Us</span>
+          </span>
+          <h2 class="section-title">
+            <span class="t-ar">ترجم — جسر بين الثقافات</span>
+            <span class="t-de" style="display:none">Targem — Brücke zwischen Kulturen</span>
+            <span class="t-en" style="display:none">Targem — A Bridge Between Cultures</span>
+          </h2>
+          <p>
+            <span class="t-ar">تأسست <strong>ترجم</strong> في القاهرة بهدف واحد: تذليل الحواجز اللغوية وتمكين الأفراد والمؤسسات من التواصل بفاعلية عبر الحدود الثقافية.</span>
+            <span class="t-de" style="display:none"><strong>Targem</strong> wurde in Kairo mit einem Ziel gegründet: Sprachbarrieren abzubauen und Einzelpersonen sowie Unternehmen zu ermöglichen, über kulturelle Grenzen hinweg effektiv zu kommunizieren.</span>
+            <span class="t-en" style="display:none"><strong>Targem</strong> was founded in Cairo with one goal: to break down language barriers and empower individuals and organizations to communicate effectively across cultural boundaries.</span>
+          </p>
+          <p>
+            <span class="t-ar">يضم فريقنا مترجمين معتمدين ومدربين متخصصين، ذوي خبرة تتجاوز عشر سنوات في الترجمة المتخصصة والتدريب اللغوي.</span>
+            <span class="t-de" style="display:none">Unser Team besteht aus zertifizierten Übersetzern und spezialisierten Trainern mit über zehn Jahren Erfahrung in Fachübersetzungen und Sprachtraining.</span>
+            <span class="t-en" style="display:none">Our team includes certified translators and specialized trainers with over ten years of experience in specialized translation and language training.</span>
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <span class="feature-icon">✅</span>
+              <span class="t-ar">مترجمون معتمدون</span>
+              <span class="t-de" style="display:none">Zertifizierte Übersetzer</span>
+              <span class="t-en" style="display:none">Certified Translators</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✅</span>
+              <span class="t-ar">تسليم في الوقت المحدد</span>
+              <span class="t-de" style="display:none">Pünktliche Lieferung</span>
+              <span class="t-en" style="display:none">On-Time Delivery</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✅</span>
+              <span class="t-ar">سرية تامة</span>
+              <span class="t-de" style="display:none">Volle Vertraulichkeit</span>
+              <span class="t-en" style="display:none">Full Confidentiality</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✅</span>
+              <span class="t-ar">أسعار تنافسية</span>
+              <span class="t-de" style="display:none">Wettbewerbsfähige Preise</span>
+              <span class="t-en" style="display:none">Competitive Pricing</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card-stack">
+            <div class="about-card ac-1">
+              <span class="t-ar">جودة مضمونة</span>
+              <span class="t-de" style="display:none">Qualität garantiert</span>
+              <span class="t-en" style="display:none">Quality Guaranteed</span>
+            </div>
+            <div class="about-card ac-2">
+              <span class="t-ar">خبرة تتجاوز 10 سنوات</span>
+              <span class="t-de" style="display:none">Über 10 Jahre Erfahrung</span>
+              <span class="t-en" style="display:none">10+ Years Experience</span>
+            </div>
+            <div class="about-card ac-3">
+              <span class="t-ar">القاهرة — مصر 🇪🇬</span>
+              <span class="t-de" style="display:none">Kairo — Ägypten 🇪🇬</span>
+              <span class="t-en" style="display:none">Cairo — Egypt 🇪🇬</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="t-ar">تواصل معنا</span>
+          <span class="t-de" style="display:none">Kontaktieren Sie uns</span>
+          <span class="t-en" style="display:none">Get In Touch</span>
+        </span>
+        <h2 class="section-title">
+          <span class="t-ar">نحن هنا لمساعدتك</span>
+          <span class="t-de" style="display:none">Wir sind für Sie da</span>
+          <span class="t-en" style="display:none">We're Here to Help</span>
+        </h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>
+                <span class="t-ar">العنوان</span>
+                <span class="t-de" style="display:none">Adresse</span>
+                <span class="t-en" style="display:none">Address</span>
+              </strong>
+              <p>
+                <span class="t-ar">القاهرة، مصر</span>
+                <span class="t-de" style="display:none">Kairo, Ägypten</span>
+                <span class="t-en" style="display:none">Cairo, Egypt</span>
+              </p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>
+                <span class="t-ar">البريد الإلكتروني</span>
+                <span class="t-de" style="display:none">E-Mail</span>
+                <span class="t-en" style="display:none">Email</span>
+              </strong>
+              <p>info@targem.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>
+                <span class="t-ar">الهاتف / واتساب</span>
+                <span class="t-de" style="display:none">Telefon / WhatsApp</span>
+                <span class="t-en" style="display:none">Phone / WhatsApp</span>
+              </strong>
+              <p dir="ltr">+20 100 000 0000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <strong>
+                <span class="t-ar">ساعات العمل</span>
+                <span class="t-de" style="display:none">Öffnungszeiten</span>
+                <span class="t-en" style="display:none">Working Hours</span>
+              </strong>
+              <p>
+                <span class="t-ar">السبت – الخميس، ٩ص – ٦م</span>
+                <span class="t-de" style="display:none">Sa–Do, 09:00–18:00</span>
+                <span class="t-en" style="display:none">Sat–Thu, 9AM – 6PM</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>
+              <span class="t-ar">الاسم الكامل</span>
+              <span class="t-de" style="display:none">Vollständiger Name</span>
+              <span class="t-en" style="display:none">Full Name</span>
+            </label>
+            <input type="text" placeholder="" required />
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="t-ar">البريد الإلكتروني</span>
+              <span class="t-de" style="display:none">E-Mail-Adresse</span>
+              <span class="t-en" style="display:none">Email Address</span>
+            </label>
+            <input type="email" placeholder="" required />
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="t-ar">نوع الخدمة</span>
+              <span class="t-de" style="display:none">Art der Dienstleistung</span>
+              <span class="t-en" style="display:none">Service Type</span>
+            </label>
+            <select required>
+              <option value="">
+                <span class="t-ar">اختر الخدمة</span>
+              </option>
+              <option value="translation">
+                <span class="t-ar">ترجمة</span>
+              </option>
+              <option value="course">
+                <span class="t-ar">كورس لغة</span>
+              </option>
+              <option value="other">
+                <span class="t-ar">أخرى</span>
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>
+              <span class="t-ar">رسالتك</span>
+              <span class="t-de" style="display:none">Ihre Nachricht</span>
+              <span class="t-en" style="display:none">Your Message</span>
+            </label>
+            <textarea rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="t-ar">إرسال الرسالة</span>
+            <span class="t-de" style="display:none">Nachricht senden</span>
+            <span class="t-en" style="display:none">Send Message</span>
+          </button>
+          <div id="form-success" class="form-success" style="display:none">
+            <span class="t-ar">✅ شكراً! سنتواصل معك قريباً.</span>
+            <span class="t-de" style="display:none">✅ Danke! Wir melden uns bald.</span>
+            <span class="t-en" style="display:none">✅ Thank you! We'll be in touch soon.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-text">ترجم / Targem</span>
+          <p>
+            <span class="t-ar">القاهرة، مصر — ترجمة • تدريب • لغات</span>
+            <span class="t-de" style="display:none">Kairo, Ägypten — Übersetzung • Training • Sprachen</span>
+            <span class="t-en" style="display:none">Cairo, Egypt — Translation • Training • Languages</span>
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#services">
+            <span class="t-ar">الخدمات</span><span class="t-de" style="display:none">Leistungen</span><span class="t-en" style="display:none">Services</span>
+          </a>
+          <a href="#courses">
+            <span class="t-ar">الكورسات</span><span class="t-de" style="display:none">Kurse</span><span class="t-en" style="display:none">Courses</span>
+          </a>
+          <a href="#about">
+            <span class="t-ar">عن الشركة</span><span class="t-de" style="display:none">Über uns</span><span class="t-en" style="display:none">About</span>
+          </a>
+          <a href="#contact">
+            <span class="t-ar">تواصل</span><span class="t-de" style="display:none">Kontakt</span><span class="t-en" style="display:none">Contact</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 ترجم / Targem — Cairo, Egypt</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
