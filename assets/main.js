@@ -3,9 +3,9 @@
 // =============================================
 
 const LANG_CONFIG = {
-  ar: { dir: 'rtl', htmlLang: 'ar', bodyClass: 'lang-ar', title: 'ترجم | خدمات الترجمة والتدريب اللغوي' },
-  de: { dir: 'ltr', htmlLang: 'de', bodyClass: 'lang-de', title: 'Targem | Übersetzung & Sprachtraining' },
-  en: { dir: 'ltr', htmlLang: 'en', bodyClass: 'lang-en', title: 'Targem | Translation & Language Training' },
+  ar: { dir: 'rtl', htmlLang: 'ar', bodyClass: 'lang-ar', title: 'German Steps | كورسات اللغات — ألماني، إنجليزي، عربي' },
+  de: { dir: 'ltr', htmlLang: 'de', bodyClass: 'lang-de', title: 'German Steps | Sprachkurse — Deutsch, Englisch, Arabisch' },
+  en: { dir: 'ltr', htmlLang: 'en', bodyClass: 'lang-en', title: 'German Steps | Language Courses — German, English, Arabic' },
 };
 
 const FORM_PLACEHOLDERS = {
@@ -16,21 +16,24 @@ const FORM_PLACEHOLDERS = {
 
 const SELECT_OPTIONS = {
   ar: [
-    { value: '', label: 'اختر الخدمة' },
-    { value: 'translation', label: 'ترجمة' },
-    { value: 'course', label: 'كورس لغة' },
+    { value: '', label: 'اختر الكورس' },
+    { value: 'german', label: 'كورس الألمانية' },
+    { value: 'english', label: 'كورس الإنجليزية' },
+    { value: 'arabic', label: 'كورس العربية' },
     { value: 'other', label: 'أخرى' },
   ],
   de: [
-    { value: '', label: 'Dienst wählen' },
-    { value: 'translation', label: 'Übersetzung' },
-    { value: 'course', label: 'Sprachkurs' },
+    { value: '', label: 'Kurs wählen' },
+    { value: 'german', label: 'Deutschkurs' },
+    { value: 'english', label: 'Englischkurs' },
+    { value: 'arabic', label: 'Arabischkurs' },
     { value: 'other', label: 'Sonstiges' },
   ],
   en: [
-    { value: '', label: 'Select a service' },
-    { value: 'translation', label: 'Translation' },
-    { value: 'course', label: 'Language Course' },
+    { value: '', label: 'Select a course' },
+    { value: 'german', label: 'German Course' },
+    { value: 'english', label: 'English Course' },
+    { value: 'arabic', label: 'Arabic Course' },
     { value: 'other', label: 'Other' },
   ],
 };
