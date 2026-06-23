@@ -105,12 +105,26 @@ function toggleMenu() {
 
 function handleSubmit(e) {
   e.preventDefault();
+
+  const name    = document.getElementById('form-name')?.value || '';
+  const email   = document.getElementById('form-email')?.value || '';
+  const course  = document.getElementById('form-course')?.value || '';
+  const message = document.getElementById('form-message')?.value || '';
+
+  const subject = encodeURIComponent(`تسجيل جديد — ${course}`);
+  const body    = encodeURIComponent(
+    `الاسم: ${name}\nالبريد: ${email}\nالكورس: ${course}\n\nالرسالة:\n${message}`
+  );
+
+  window.open(
+    `https://mail.google.com/mail/?view=cm&to=germansteps4kids@gmail.com&su=${subject}&body=${body}`,
+    '_blank'
+  );
+
   const successEl = document.getElementById('form-success');
   if (successEl) {
-    // Show the correct language success message
     successEl.querySelectorAll('[class^="t-"]').forEach(el => {
-      const cls = el.className;
-      el.style.display = cls === `t-${currentLang}` ? '' : 'none';
+      el.style.display = el.className === `t-${currentLang}` ? '' : 'none';
     });
     successEl.style.display = 'block';
     e.target.reset();
